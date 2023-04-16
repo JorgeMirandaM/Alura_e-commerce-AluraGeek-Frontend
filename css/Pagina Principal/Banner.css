@@ -1,0 +1,52 @@
+.seccion__banner {
+  width: 100%;
+  height: calc(100vw * .25);
+  background-image: url(../../assets/images/banner-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner__informacion {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.banner__informacion h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 61px;
+  color: #ffffff;
+}
+
+.banner__informacion h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.banner__informacion button {
+  padding: 16px;
+  gap: 10px;
+  background: #2a7ae4;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+}
