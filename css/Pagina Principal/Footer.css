@@ -1,0 +1,117 @@
+.PiedePagina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.PiedePagina__primeraSeccion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  background: #eaf2fd;
+}
+
+.PiedePagina__primeraSeccion__contenedor {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PiedePagina__navegacion nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.PiedePagina__navegacion nav ul li {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+
+.PiedePagina__formulario {
+  width: 50%;
+}
+
+.PiedePagina__formulario form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.PiedePagina__formulario form p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+
+.PiedePagina__formulario form div {
+  width: 100%;
+}
+
+.PiedePagina__formulario form div input {
+  width: 100%;
+  padding: 12px;
+  border: transparent;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a2a2a2;
+}
+
+.PiedePagina__formulario form div textarea{
+    width: 100%;
+    padding: 12px;
+    border: transparent;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a2a2a2;
+}
+
+.PiedePagina__formulario form .formulario__boton button {
+  padding: 16px;
+  background: #2A7AE4;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+border: transparent;
+color: #FFFFFF;
+}
+
+
+
+.PiedePagina__segundaSeccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.PiedePagina__segundaSeccion p{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #464646;
+}
