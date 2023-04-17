@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
+  padding: 4rem 0;
   background: #eaf2fd;
 }
 
@@ -17,22 +17,41 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  
+}
+
+
+.PiedePagina__logo__navegador{
+ width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.PiedePagina__navegacion{
+  width: 50%;
+  display: flex;
+  justify-content:center;
 }
 
 .PiedePagina__navegacion nav ul {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 1.5rem;
+  padding-top:.5rem ;
 }
 
 .PiedePagina__navegacion nav ul li {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   color: #464646;
 }
 
@@ -44,15 +63,15 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .PiedePagina__formulario form p {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   color: #464646;
 }
 
@@ -62,56 +81,104 @@
 
 .PiedePagina__formulario form div input {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   border: transparent;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   color: #a2a2a2;
 }
 
-.PiedePagina__formulario form div textarea{
-    width: 100%;
-    padding: 12px;
-    border: transparent;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #a2a2a2;
+.PiedePagina__formulario form div textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: transparent;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #a2a2a2;
 }
 
 .PiedePagina__formulario form .formulario__boton button {
-  padding: 16px;
-  background: #2A7AE4;
-  font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-border: transparent;
-color: #FFFFFF;
+  padding: 1rem;
+  background: #2a7ae4;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.PiedePagina__segundaSeccion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.PiedePagina__segundaSeccion p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #464646;
 }
 
 
 
-.PiedePagina__segundaSeccion{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+@media screen and (max-width:1200px) {
+  .PiedePagina__logo__navegador{
+    flex-direction: column;
     align-items: center;
-    padding: 32px 0;
+  }
+  .PiedePagina__navegacion{
+    width: 100%;
+  }
 }
 
-.PiedePagina__segundaSeccion p{
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-color: #464646;
+
+
+
+@media screen and (max-width:768px) {
+  
+  .PiedePagina__primeraSeccion__contenedor{
+    width: 90%;
+  }
+
+  .PiedePagina__logo__navegador{
+    flex-direction: column;
+  }
+
+  
+
+}
+
+
+@media screen and (max-width:600px) {
+
+  .PiedePagina__primeraSeccion__contenedor{
+    
+    flex-direction: column;
+    align-content: center;
+    gap: 1em;
+  }
+
+  .PiedePagina__logo__navegador{
+    width: 100%;
+  }
+
+  .PiedePagina__formulario{
+    width: 100%;
+  }
 }

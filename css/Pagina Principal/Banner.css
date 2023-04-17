@@ -2,12 +2,13 @@
   width: 100%;
   height: calc(100vw * .25);
   background-image: url(../../assets/images/banner-image.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  font-size: 16px;
 }
 
 .banner__informacion {
@@ -16,15 +17,14 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1em;
 }
 
 .banner__informacion h1 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
-  line-height: 61px;
+  font-size: 3.25rem;
   color: #ffffff;
 }
 
@@ -32,21 +32,59 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.375em;
+  line-height: 1.625em;
   color: #ffffff;
 }
 
 .banner__informacion button {
-  padding: 16px;
-  gap: 10px;
+  padding: 1em;
+  gap: 0.625em;
   background: #2a7ae4;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1em;
+  line-height: 1.1875em;
   border: transparent;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 0.625em;
+}
+
+
+@media screen and (max-width:1000px) {
+  .seccion__banner {
+    height: 352px;
+    align-items: flex-end;
+  }
+
+  .banner__informacion {
+    padding-bottom: 2em;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  
+  .banner__informacion {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .seccion__banner{
+    font-size: 12px;
+    height: 16rem;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .seccion__banner{
+    font-size: 8px;
+    height: 12rem;
+  }
 }

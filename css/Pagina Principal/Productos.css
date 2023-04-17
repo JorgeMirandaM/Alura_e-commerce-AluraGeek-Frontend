@@ -1,6 +1,6 @@
 .seccion__productos {
   width: 100%;
-  padding: 32px 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
 }
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 4rem;
 }
 
 .producto__renglon {
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .titulo__verTodo {
@@ -32,13 +32,13 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 2rem;
+  line-height: 2.375rem;
   color: #464646;
 }
 
 .titulo__verTodo div {
-  gap: 8;
+  gap: 0.5rem;
   color: #2a7ae4;
 
   cursor: pointer;
@@ -48,8 +48,8 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 38px;
+  font-size: 1rem;
+  line-height: 2.375rem;
   color: #2a7ae4;
 }
 
@@ -66,24 +66,21 @@
     
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .producto__informacion{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .producto__informacion p{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-    /* Preto/100% */
-    
+    font-size: 0.875rem;
+    line-height: 1rem;
     color: #464646;
 }
 
@@ -91,13 +88,8 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    
-    
-    /* Preto/100% */
-    
+    font-size: 1rem;
+    line-height: 1.1875rem;
     color: #464646;
 }
 
@@ -105,9 +97,27 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.1875rem;
     text-decoration: none;
     color: #2A7AE4;
     
+}
+
+
+@media screen and (max-width:768px) {
+  
+  .seccion__productos__contenedor{
+    width: 90%;
+  }
+
+}
+
+
+@media screen and (max-width:500px) {
+  
+  .productos{
+    justify-content: center;
+  }
+
 }
