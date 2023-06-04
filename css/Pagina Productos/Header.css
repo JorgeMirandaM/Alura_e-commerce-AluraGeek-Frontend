@@ -19,17 +19,12 @@
   width: 60%;
   display: flex;
   align-items: center;
-  gap: 2em;
-}
-
-.logo__buscador .logo{
-  border: none;
+  gap: 3em;
 }
 
 .logo__buscador .logo img {
   width: 11em;
   height: 3.125em;
-  
 }
 
 .logo__buscador .buscador {
@@ -60,22 +55,25 @@
   cursor: pointer;
 }
 
-
-
-.header__contenedor  a {
+.header__contenedor .loginBtn {
   width: 11.375em;
   padding: 1em;
   border: 0.0625em solid #2a7ae4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625em;
+
+  cursor: pointer;
+}
+
+.header__contenedor .loginBtn a {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
   color: #2a7ae4;
-  border-radius: 0.625em;
-
-  cursor: pointer;
-  text-align: center;
 }
 
 
@@ -95,7 +93,7 @@
   
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:360px) {
   
   .buscador {
     display: none;
