@@ -1,0 +1,138 @@
+.seccion__Producto {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion__Producto__contenedor{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductoDetallado {
+  display: flex;
+  width: 100%;
+}
+
+.ProductoDetallado__imagen {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.ProductoDetallado__tituloPrecioDescripcion {
+  width: 48%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ProductoDetallado__tituloPrecioDescripcion h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.ProductoDetallado__tituloPrecioDescripcion div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ProductoDetallado__tituloPrecioDescripcion span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  /* Preto/100% */
+
+  color: #464646;
+}
+
+.ProductoDetallado__tituloPrecioDescripcion p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Preto/100% */
+
+  color: #464646;
+}
+
+.ProductosSimilares {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductosSimilares h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  color: #464646;
+}
+
+.productos {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .producto__informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .producto__informacion p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #464646;
+  }
+  
+  .producto__informacion span {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #464646;
+  }
+  
+  .producto__informacion a {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-decoration: none;
+    color: #2a7ae4;
+  }

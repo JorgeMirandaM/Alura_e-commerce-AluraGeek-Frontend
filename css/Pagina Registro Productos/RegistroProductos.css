@@ -1,0 +1,108 @@
+.Seccion__RegistroProductos {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+}
+
+.Seccion__RegistroProductos form {
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Seccion__RegistroProductos form h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+
+  /* Preto/100% */
+
+  color: #464646;
+}
+
+.Seccion__RegistroProductos form input {
+  width: 96%;
+  padding: 14px 2%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+
+  color: #464646;
+  border: none;
+}
+
+.Seccion__RegistroProductos form select {
+  width: 100%;
+  padding: 14px 2%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+
+  color: #464646;
+  border: none;
+}
+
+.Seccion__RegistroProductos form textarea {
+  width: 96%;
+  padding: 14px 2%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+
+  color: #464646;
+  border: none;
+}
+
+.Seccion__RegistroProductos form button {
+  width: 100%;
+  padding: 14px 2%;
+  background: #2a7ae4;
+  border: none;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Seccion__RegistroProductos form {
+    width: 95%;
+  }
+
+  .Seccion__RegistroProductos form h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

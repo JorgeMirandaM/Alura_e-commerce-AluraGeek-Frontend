@@ -76,6 +76,23 @@
   color: #2a7ae4;
 }
 
+.header__contenedor  a {
+  width: 11.375em;
+  padding: 1em;
+  border: 0.0625em solid #2a7ae4;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #2a7ae4;
+  border-radius: 0.625em;
+
+  cursor: pointer;
+  text-align: center;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
