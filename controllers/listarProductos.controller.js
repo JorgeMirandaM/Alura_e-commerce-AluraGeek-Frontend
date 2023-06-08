@@ -26,7 +26,7 @@ const Diversos = document.querySelector("[data-Diversos]");
 const listarProductos = async () => {
   try {
     const data = await productServices.listarProductos();
-    data.forEach(({ id, imagen, categoria, nombre, precio, descripcion,aautor }) => {
+    data.forEach(({ id, imagen, categoria, nombre, precio, descripcion,autor }) => {
       const nuevoProducto = listarProducto(
         id,
         imagen,

@@ -22,17 +22,18 @@ const eliminarProducto= async (id)=>{
 }
 
 const detalleProducto= async (id)=>{
-    const response= await fetch(`http://localhost:4000/actualizarProductos/${id}`,{
+    const response= await fetch(`http://localhost:4000/products/getProductById/${id}`,{
         method:'GET',
         credentials:'include'
     });
     return await response.json();
 }
 
-const actualizarProducto= async (data)=>{
+const actualizarProducto= async (id,data)=>{
     try {
-        const response= await fetch(`http://localhost:4000/products`,{
+        const response= await fetch(`http://localhost:4000/products/updateProductById/${id}`,{
             method:'PUT',
+            body:data,
             credentials:'include'
         })
 
