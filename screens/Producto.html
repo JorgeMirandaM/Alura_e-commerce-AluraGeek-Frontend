@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="../css/Pagina Producto/PaginaProducto.css" />
     <link rel="stylesheet" href="../css/Pagina Principal/Header.css" />
-    <link rel="stylesheet" href="../css/Pagina Producto/Producto.css " />
+    <link rel="stylesheet" href="../css/Pagina Producto/Producto.css" />
     <link rel="stylesheet" href="../css/Pagina Principal/Footer.css" />
   </head>
   <body>
@@ -36,107 +36,14 @@
       <!--Sección de Producto con mas detalle-->
       <section class="seccion__Producto">
         <div class="seccion__Producto__contenedor">
-          <div class="ProductoDetallado">
-            <div class="ProductoDetallado__imagen">
-              <img src="" alt="" />
-            </div>
-            <div class="ProductoDetallado__tituloPrecioDescripcion">
-              <h2>Producto XYZ</h2>
-              <div>
-                <span>$ 60.00</span>
-                <p>
-                  Voluptas voluptatum quibusdam similique, class debitis alias
-                  maecenas eveniet ridiculus, facilis fusce! Ullam conubia?
-                  Sociis, minima malesuada habitasse distinctio sequi aliqua
-                  malesuada. Quisque deleniti proin expedita, aliquid litora. Iste
-                  recusandae? Commodo, quia ridiculus doloribus vero dictum?
-                  Penatibus donec placeat faucibus, dolorum do. Animi porta anim
-                  magnam
-                </p>
-              </div>
-            </div>
+          <div class="ProductoDetallado" data-productoDetalle>
+            
           </div>
           <div class="ProductosSimilares">
             <h3>Productos similares</h3>
-            <div class="productos">
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen1.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen3.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen4.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen5.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
-              <div class="producto">
-                <div class="producto__imagen">
-                  <img
-                    src="assets/images/categorias/consolas/imagen6.png"
-                    alt=""
-                  />
-                </div>
-                <div class="producto__informacion">
-                  <p>Producto XYZ</p>
-                  <span>$ 60,00</span>
-                  <a href="">Ver producto</a>
-                </div>
-              </div>
+            <div class="productos" data-productos>
+              
+             
             </div>
           </div>
         </div>
@@ -168,14 +75,36 @@
               <form action="">
                 <p>Hable con nosotros</p>
 
-                <input type="text" placeholder="Nombre" />
+                <div class="formulario__form__contenedor">
+                  <input
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                    data-tipo="nombre"
+                  />
 
-                <textarea name="" id="" cols="30" rows="5">
-Escribe tu mensaje</textarea
+                  <span class="input-message-error"
+                    >Este campo no es valido</span
+                  >
+                </div>
+                <div class="formulario__form__contenedor">
+                  <textarea
+                    type="text"
+                    cols="30"
+                    rows="10"
+                    required
+                    minlength="15"
+                    data-tipo="mensaje"
+                  >
+                  </textarea>
+
+                  <span class="input-message-error"
+                  >Este campo no es valido</span
                 >
+                </div>
 
                 <div class="formulario__boton">
-                  <button>Enviar Mensaje</button>
+                  <button type="submit">Enviar Mensaje</button>
                 </div>
               </form>
             </div>
@@ -186,6 +115,7 @@ Escribe tu mensaje</textarea
         </div>
       </footer>
     </div>
+    <script type="module" src="../controllers/mostrarProductoDetalle.controller.js"></script>
     <script type="module" src="../controllers/getCuenta.controller.js"></script>
   </body>
 </html>

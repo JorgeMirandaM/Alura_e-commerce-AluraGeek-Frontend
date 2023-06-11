@@ -1,6 +1,6 @@
 import { productServices } from "../service/product-service.js";
 
-const listarProducto = (id, imagen, categoria, nombre, precio, descripcion) => {
+const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => {
   const linea = document.createElement("div");
   const producto = `<div class="producto">
     <div class="producto__imagen">
@@ -12,7 +12,7 @@ const listarProducto = (id, imagen, categoria, nombre, precio, descripcion) => {
     <div class="producto__informacion">
       <p>${nombre}</p>
       <span>${precio}</span>
-      <a href='../screens/Producto.html'>Ver producto</a>
+      <a href="./Producto.html?id=${_id}">Ver producto</a>
     </div>
   </div>`;
   linea.innerHTML = producto;
@@ -26,9 +26,9 @@ const Diversos = document.querySelector("[data-Diversos]");
 const listarProductos = async () => {
   try {
     const data = await productServices.listarProductos();
-    data.forEach(({ id, imagen, categoria, nombre, precio, descripcion,autor }) => {
+    data.forEach(({ _id, imagen, categoria, nombre, precio, descripcion,autor }) => {
       const nuevoProducto = listarProducto(
-        id,
+        _id,
         imagen,
         categoria,
         nombre,

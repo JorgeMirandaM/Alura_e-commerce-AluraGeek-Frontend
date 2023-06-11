@@ -24,7 +24,6 @@ const eliminarProducto= async (id)=>{
 const detalleProducto= async (id)=>{
     const response= await fetch(`http://localhost:4000/products/getProductById/${id}`,{
         method:'GET',
-        credentials:'include'
     });
     return await response.json();
 }
