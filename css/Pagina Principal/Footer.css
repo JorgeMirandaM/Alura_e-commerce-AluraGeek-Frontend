@@ -77,29 +77,113 @@
 
 
 
-.PiedePagina__formulario form  input {
-  width: 95%;
-  padding: 5%;
-  border: transparent;
+
+
+
+
+
+
+.formulario__form__contenedor  input {
+  width: 100%;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  padding: 16px;
   color: #a2a2a2;
+  transition: .3s ease all;
+  margin-bottom: 4px;
 }
 
-.PiedePagina__formulario form  textarea {
-  width: 95%;
-  padding: 5%;
-  border: transparent;
+.formulario__form__contenedor input:focus{
+  border: 3px solid #2a7ae4;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__form__contenedor  textarea {
+  width: 100%;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
+  line-height: 1rem;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  padding: 16px;
   color: #a2a2a2;
+  transition: .3s ease all;
   height: 82px;
 }
+
+.formulario__form__contenedor textarea:focus{
+  border: 3px solid #2a7ae4;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+
+
+
+
+
+
+
+
+.input-message-error{
+  font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+
+
+.formulario__form__contenedor-incorrecto  input {
+	border: 3px solid #bb2929;
+}
+
+.formulario__form__contenedor-incorrecto  textarea {
+	border: 3px solid #bb2929;
+}
+
+.formulario__form__contenedor-incorrecto .input-message-error{
+  display: initial;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #bb2929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .PiedePagina__formulario form .formulario__boton button {
   padding: 1rem;
@@ -113,6 +197,11 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+
+
+
+
 
 .PiedePagina__segundaSeccion {
   width: 100%;

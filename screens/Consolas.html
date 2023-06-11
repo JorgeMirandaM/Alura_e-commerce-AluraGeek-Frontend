@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/Pagina Principal/PaginaPrincipal.css" />
+    <link rel="stylesheet" href="../css/Pagina Principal/Header.css" />
+    <link rel="stylesheet" href="../css/Pagina Principal/Banner.css" />
+    <link rel="stylesheet" href="../css/Pagina Principal/Productos.css" />
+    <link rel="stylesheet" href="../css/Pagina Principal/Footer.css" />
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="PaginaPrincipal__AluraGeek">
+      <!--Sección del header de AluraGeek-->
+      <header class="header">
+        <div class="header__contenedor">
+          <div class="logo__buscador">
+            <a class="logo" href="../screens/index.html">
+              <img src="../assets/images/logos/Logo.png" alt="" />
+            </a>
+            <div class="buscador">
+              <input type="text" placeholder="¿Qué deseas buscar?"/>
+              <button><img src="../assets/iconos/lupa.svg" alt=""></button>
+            </div>
+          </div>
+         
+            <nav data-nav>
+
+            </nav>
+          
+        </div>
+      </header>
+
+      
+
+      <!--Sección de galería de productos-->
+      <section class="seccion__productos">
+        <div class="seccion__productos__contenedor">
+          
+          <!--Seccion Consolas-->
+          <div class="producto__renglon">
+            <div class="titulo__verTodo">
+              <h2>Consolas</h2>
+            </div>
+            <div class="productos" data-Consolas>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--Sección del footer de AluraGeek-->
+      <footer class="PiedePagina">
+        <div class="PiedePagina__primeraSeccion">
+          <div class="PiedePagina__primeraSeccion__contenedor">
+            <div class="PiedePagina__logo__navegador">
+              <div class="PiedePagina__logo">
+                <img src="assets/images/logos/Logo.png" alt="" />
+              </div>
+              <div class="PiedePagina__navegacion">
+                <nav>
+                  <ul>
+                    <li>Quienes somos</li>
+                    <li>Política de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras Tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Anúncie aquí</li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="PiedePagina__formulario">
+              <form action="">
+                <p>Hable con nosotros</p>
+
+                <input type="text" placeholder="Nombre" />
+
+                <textarea name="" id="" cols="30" rows="10">
+Escribe tu mensaje</textarea
+                >
+
+                <div class="formulario__boton">
+                  <button>Enviar Mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="PiedePagina__segundaSeccion">
+          <p>Desarrollado por Jorge Federico Miranda Morones / 2023</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../controllers/listarConsolas.controller.js"></script>
+    <script type="module" src="../controllers/getCuenta.controller.js"></script>
+  </body>
+</html>

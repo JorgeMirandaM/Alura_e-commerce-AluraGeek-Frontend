@@ -15,7 +15,7 @@ const crearProducto= async (data)=>{
 }
 
 const eliminarProducto= async (id)=>{
-    return await fetch(`http://localhost:4000/products/${id}`,{
+    return await fetch(`http://localhost:4000/products/deleteProductById/${id}`,{
         method:'DELETE',
         credentials:'include'
     })

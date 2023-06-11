@@ -75,6 +75,18 @@
   gap: 24px;
 }
 
+.producto__imagen div button  {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.producto__imagen div button img {
+  width: 18px;
+  height: 18px;
+}
+
 .producto__imagen div a img {
   width: 18px;
   height: 18px;

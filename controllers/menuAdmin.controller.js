@@ -10,7 +10,8 @@ const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => 
     />
 
     <div>
-      <a href=""><img src="../assets/iconos/basura.svg" alt="" /></a>
+      <button type="button"
+      id=${_id}><img src="../assets/iconos/basura.svg" alt="" /></button>
       <a href="./ActualizarProducto.html?id=${_id}"><img src="../assets/iconos/lapiz.svg" alt="" /></a>
     </div>
   </div>
@@ -21,6 +22,18 @@ const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => 
   </div>
 </div>`;
   linea.innerHTML = producto;
+
+  const btn = linea.querySelector("button");
+  btn.addEventListener("click", async () => {
+    const id = btn.id;
+    try{
+      const respuesta= await productServices.eliminarProducto(id)
+      window.location.reload();
+    }catch(e){
+      alert('Ocurrio un error')
+    }
+  });
+
   return linea;
 };
 

@@ -22,6 +22,10 @@
   gap: 3em;
 }
 
+.logo__buscador .logo{
+  border: none;
+}
+
 .logo__buscador .logo img {
   width: 11em;
   height: 3.125em;

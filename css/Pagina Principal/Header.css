@@ -54,7 +54,7 @@
 .buscador button{
   position: absolute;
   top: 20%;
-  right:-5%;
+  right:0;
   border: none;
   background: transparent;
   cursor: pointer;

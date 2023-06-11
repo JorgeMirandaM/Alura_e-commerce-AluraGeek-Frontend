@@ -38,7 +38,7 @@
   color: #ffffff;
 }
 
-.banner__informacion button {
+.banner__informacion a {
   padding: 1em;
   gap: 0.625em;
   background: #2a7ae4;
@@ -50,6 +50,8 @@
   border: transparent;
   color: #ffffff;
   border-radius: 0.625em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
