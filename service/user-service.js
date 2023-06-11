@@ -1,6 +1,6 @@
 const signin= async (email,password)=>{
     
-    return response= await fetch('http://localhost:4000/api/auth/signin',{
+    return response= await fetch('https://backend-alurageek.onrender.com/api/auth/signin',{
         method:'POST',
         body:JSON.stringify({email,password}),
         headers:{
@@ -11,7 +11,7 @@ const signin= async (email,password)=>{
 }
 
 const signup= async (nombre,email,password)=>{
-    return response= await fetch('http://localhost:4000/api/auth/signup',{
+    return response= await fetch('https://backend-alurageek.onrender.com/api/auth/signup',{
         method:'POST',
         body:JSON.stringify({nombre,email,password}),
         headers:{'Content-Type':'application/json'},
@@ -22,14 +22,14 @@ const signup= async (nombre,email,password)=>{
 
 
 const logout= async ()=>{
-    return response= await fetch('http://localhost:4000/api/auth/logout',{
+    return response= await fetch('https://backend-alurageek.onrender.com/api/auth/logout',{
         method:'POST',
         credentials:'include'
     })
 }
 
 const getCuenta= async()=>{
-     const response= await fetch('http://localhost:4000/api/auth/getCuenta',{
+     const response= await fetch('https://backend-alurageek.onrender.com/api/auth/getCuenta',{
         credentials:'include'
     })
 

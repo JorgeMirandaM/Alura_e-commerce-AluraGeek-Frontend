@@ -1,12 +1,12 @@
 const listarProductos = async ()=>{
-    const respuesta = await fetch('http://localhost:4000/products/getProducts');
+    const respuesta = await fetch('https://backend-alurageek.onrender.com/products/getProducts');
     return await respuesta.json();
 }
 
 
 
 const crearProducto= async (data)=>{
-    return await fetch('http://localhost:4000/products/createProduct',{
+    return await fetch('https://backend-alurageek.onrender.com/products/createProduct',{
         method:'POST',
         body:data,
         
@@ -15,14 +15,14 @@ const crearProducto= async (data)=>{
 }
 
 const eliminarProducto= async (id)=>{
-    return await fetch(`http://localhost:4000/products/deleteProductById/${id}`,{
+    return await fetch(`https://backend-alurageek.onrender.com/products/deleteProductById/${id}`,{
         method:'DELETE',
         credentials:'include'
     })
 }
 
 const detalleProducto= async (id)=>{
-    const response= await fetch(`http://localhost:4000/products/getProductById/${id}`,{
+    const response= await fetch(`https://backend-alurageek.onrender.com/products/getProductById/${id}`,{
         method:'GET',
     });
     return await response.json();
@@ -30,7 +30,7 @@ const detalleProducto= async (id)=>{
 
 const actualizarProducto= async (id,data)=>{
     try {
-        const response= await fetch(`http://localhost:4000/products/updateProductById/${id}`,{
+        const response= await fetch(`https://backend-alurageek.onrender.com/products/updateProductById/${id}`,{
             method:'PUT',
             body:data,
             credentials:'include'
