@@ -40,6 +40,11 @@ const filtrarProductos = async () => {
     const seccionIntorduccionPalabraClave = `<div class="producto__renglon" data-PCRenglon>
   <div class="titulo__verTodo">
     <h2>Busqueda por '${palabraClave.value}'</h2>
+    <div>
+                <button data-btnVerTodo
+                  >Ver Todo <i class="fa-solid fa-arrow-right"></i
+                ></button>
+              </div>
   </div>
   <div class="productos" data-palabraClave></div>
 </div>`;
