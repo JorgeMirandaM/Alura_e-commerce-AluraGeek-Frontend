@@ -20,7 +20,7 @@ const obtenerInformacion= async()=>{
     precio.value=producto.precio;
     descripcion.value=producto.descripcion;
   } catch (error) {
-    // window.location.href = "/screens/error.html";
+    // window.location.href = "/docs/error.html";
   }
 
 }

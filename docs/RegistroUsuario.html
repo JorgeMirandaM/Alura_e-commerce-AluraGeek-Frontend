@@ -20,7 +20,7 @@
       <header class="header">
         <div class="header__contenedor">
           <div class="logo__buscador">
-            <a class="logo" href="../screens/index.html">
+            <a class="logo" href="../docs/index.html">
               <img src="../assets/images/logos/Logo.png" alt="" />
             </a>
             <div class="buscador">
@@ -36,16 +36,20 @@
       <!--Sección del Formulario Login-->
       <section class="seccion__formulario">
         <form action="" class="seccion__formulario__formulario" data-form>
-          <h3>Iniciar Sesión</h3>
+          <h3>Registrar Usuario</h3>
           <div class="seccion__formulario__formulario__correo">
-            <input name="email" type="text" required placeholder="Escriba su correo electrónico" data-email/>
+            <input type="text" name="nombre" required placeholder="Escriba nombre de usuario" data-nombre/>
             <div class="seccion__formulario__formulario__correo__linea"></div>
           </div>
           <div class="seccion__formulario__formulario__correo">
-            <input name="password" type="password" required placeholder="Escriba su contraseña" data-password/>
+            <input type="text" name="email" required placeholder="Escriba su correo electrónico" data-email/>
             <div class="seccion__formulario__formulario__correo__linea"></div>
           </div>
-          <button type="submit">Entrar</button>
+          <div class="seccion__formulario__formulario__correo">
+            <input type="password" name="password" required placeholder="Escriba su contraseña" data-password/>
+            <div class="seccion__formulario__formulario__correo__linea"></div>
+          </div>
+          <button type="submit">Registrar</button>
         </form>
       </section>
 
@@ -116,6 +120,7 @@
       </footer>
     </div>
     <script type="module" src="../controllers/filtrarProductos.controller.js"></script>
-    <script type="module" src="../controllers/signin.controller.js"></script>
+    <script type="module" src="../controllers/signup.controller.js"></script>
+    <script type="module" src="../controllers/getCuenta.controller.js"></script>
   </body>
 </html>

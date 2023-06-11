@@ -77,7 +77,7 @@ const obtenerInformacion = async () => {
     );
 
   } catch (error) {
-    // window.location.href = "/screens/error.html";
+    // window.location.href = "/docs/error.html";
   }
 };
 

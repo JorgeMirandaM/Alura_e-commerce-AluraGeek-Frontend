@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diversos</title>
+    <title>AluraGeek</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/Pagina Principal/PaginaPrincipal.css" />
@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="../css/Pagina Principal/Productos.css" />
     <link rel="stylesheet" href="../css/Pagina Principal/Footer.css" />
     <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="PaginaPrincipal__AluraGeek">
@@ -20,7 +25,7 @@
       <header class="header">
         <div class="header__contenedor">
           <div class="logo__buscador">
-            <a class="logo" href="../screens/index.html">
+            <a class="logo" href="../docs/index.html">
               <img src="../assets/images/logos/Logo.png" alt="" />
             </a>
             <div class="buscador">
@@ -33,22 +38,54 @@
         </div>
       </header>
 
-      
+      <!--Sección de banner de descuentos-->
+      <section class="seccion__banner">
+        <div class="banner__informacion">
+          <h1>Febrero Promocional</h1>
+          <h3>Productos seleccionados con 33% de descuento</h3>
+          <a href="Consolas.html">Ver consolas</a>
+        </div>
+      </section>
 
       <!--Sección de galería de productos-->
       <section class="seccion__productos">
-        <div class="seccion__productos__contenedor">
-          
+        <div class="seccion__productos__contenedor" data-seccionProductos>
+          <!--Seccion Star Wars-->
+          <div class="producto__renglon" data-SWRenglon>
+            <div class="titulo__verTodo">
+              <h2>Star Wars</h2>
+              <div>
+                <button data-btnVerTodo
+                  >Ver Todo <i class="fa-solid fa-arrow-right"></i
+                ></button>
+              </div>
+            </div>
+            <div class="productos" data-StarWars></div>
+          </div>
           <!--Seccion Consolas-->
-          <div class="producto__renglon">
+          <div class="producto__renglon" data-CRenglon>
+            <div class="titulo__verTodo">
+              <h2>Consolas</h2>
+              <div>
+                <button data-btnVerTodo
+                  >Ver Todo <i class="fa-solid fa-arrow-right"></i
+                ></button>
+              </div>
+            </div>
+            <div class="productos" data-Consolas></div>
+          </div>
+          <!--Seccion Diversos-->
+          <div class="producto__renglon" data-DRenglon>
             <div class="titulo__verTodo">
               <h2>Diversos</h2>
+              <div>
+                <button data-btnVerTodo
+                  >Ver Todo <i class="fa-solid fa-arrow-right"></i
+                ></button>
+              </div>
             </div>
-            <div class="productos" data-Diversos>
-              
-            </div>
+            <div class="productos" data-Diversos></div>
           </div>
-          
         </div>
       </section>
 
@@ -118,9 +155,17 @@
         </div>
       </footer>
     </div>
+    <script
+      type="module"
+      src="../controllers/listarProductos.controller.js"
+    ></script>
     <script type="module" src="../controllers/filtrarProductos.controller.js"></script>
-    <script type="module" src="../controllers/listarDiversos.controller.js"></script>
     <script type="module" src="../controllers/listarTodosProductos.controller.js"></script>
+    <!-- <script type="module" src="../validaciones/app.js"></script> -->
     <script type="module" src="../controllers/getCuenta.controller.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ formulario.addEventListener('submit',(e)=>{
 
     try {
         const response=userServices.signin(email,password);
-        window.location.href="/screens/MenuAdmin.html";
+        window.location.href="/docs/MenuAdmin.html";
 
     } catch (error) {
         console.log(error)
