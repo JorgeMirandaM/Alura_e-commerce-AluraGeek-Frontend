@@ -75,6 +75,8 @@ const filtrarProductos = async () => {
 
 botonFiltrar.addEventListener("click", () => {
 
+  window.location.href="/screens/index.html";
+
     if(document.querySelector("[data-SWRenglon]")){
         document.querySelector("[data-SWRenglon]").remove();
     }

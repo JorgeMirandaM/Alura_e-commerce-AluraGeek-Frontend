@@ -126,6 +126,21 @@
 }
 
 @media screen and (max-width: 1360px) {
+
+  .titulo__agregarProducto a{
+    padding: 1rem;
+  background: #2a7ae4;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1875rem;
+  border: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -133,6 +148,20 @@
     width: 90%;
   }
 }
+
+
+@media screen and (max-width: 666px) {
+
+  .seccion__productos__contenedor{
+    gap: 32px;
+  }
+
+  .titulo__agregarProducto{
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .productos {

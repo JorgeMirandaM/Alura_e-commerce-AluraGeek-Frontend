@@ -142,3 +142,26 @@
     text-decoration: none;
     color: #2a7ae4;
   }
+
+  @media screen and (max-width: 900px) {
+
+    
+.ProductoDetallado__imagen img {
+  width: 50%;
+}
+    .ProductoDetallado div{
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+
+
+    .ProductoDetallado__tituloPrecioDescripcion h2{
+      font-size: 26px;
+    }
+
+    .ProductoDetallado__tituloPrecioDescripcion p {
+      font-size: 12px;
+    }
+
+  }

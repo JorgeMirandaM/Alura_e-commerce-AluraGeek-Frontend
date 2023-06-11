@@ -9,30 +9,28 @@
     <link rel="stylesheet" href="../style.css" />
 
     <link rel="stylesheet" href="../css/Pagina Registro Productos/PaginaRegistroProductos.css">
-    <link rel="stylesheet" href="../css/Pagina Registro Productos/Header.css">
+    <link rel="stylesheet" href="../css/Pagina Principal/Header.css">
     <link rel="stylesheet" href="../css/Pagina Registro Productos/RegistroProductos.css">
     <link rel="stylesheet" href="../css/Pagina Registro Productos/Footer.css">
 </head>
 <body>
     <div class="RegistroProductos__AluraGeek">
         <!--Sección del header de AluraGeek-->
-      <header class="header">
-        <div class="header__contenedor">
-          <div class="logo__buscador">
-            <a class="logo" href="./index.html">
-              <img src="../assets/images/logos/Logo.png" alt="" />
-            </a>
-            <div class="buscador">
-              <input type="text" placeholder="¿Qué deseas buscar?"/>
-              <button><img src="../assets/iconos/lupa.svg" alt=""></button>
+        <header class="header">
+          <div class="header__contenedor">
+            <div class="logo__buscador">
+              <a class="logo" href="../screens/index.html">
+                <img src="../assets/images/logos/Logo.png" alt="" />
+              </a>
+              <div class="buscador">
+                <input type="text" placeholder="¿Qué deseas buscar?" data-buscador/>
+                <button type="submit" data-filtrarBtn><img src="../assets/iconos/lupa.svg" alt="" /></button>
+              </div>
             </div>
+  
+            <nav data-nav></nav>
           </div>
-         
-          <nav data-nav>
-
-          </nav>
-        </div>
-      </header>
+        </header>
 
       <!--Sección de registro de producto-->
       <section class="Seccion__RegistroProductos">
@@ -95,6 +93,7 @@
         </div>
       </footer>
     </div>
+    <script type="module" src="../controllers/filtrarProductos.controller.js"></script>
     <script type="module" src="../controllers/actualizarProducto.controller.js"></script>
     <script type="module" src="../controllers/getCuenta.controller.js"></script>
 </body>

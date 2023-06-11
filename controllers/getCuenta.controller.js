@@ -4,6 +4,7 @@ const getNavAdmin = () => {
   const linea = document.createElement("div");
   const nav = `
     <a href="./MenuAdmin.html">Menu Administrador</a>
+    <button>Logout</button>
     `;
 
   linea.innerHTML = nav;
