@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar Producto</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <title>Registrar Producto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="../css/Pagina Registro Productos/PaginaRegistroProductos.css">
-    <link rel="stylesheet" href="../css/Pagina Principal/Header.css">
-    <link rel="stylesheet" href="../css/Pagina Registro Productos/RegistroProductos.css">
-    <link rel="stylesheet" href="../css/Pagina Registro Productos/Footer.css">
+    <link rel="stylesheet" href="css/Pagina Registro Productos/PaginaRegistroProductos.css">
+    <link rel="stylesheet" href="css/Pagina Principal/Header.css">
+    <link rel="stylesheet" href="css/Pagina Registro Productos/RegistroProductos.css">
+    <link rel="stylesheet" href="css/Pagina Registro Productos/Footer.css">
 </head>
 <body>
     <div class="RegistroProductos__AluraGeek">
@@ -19,12 +19,12 @@
         <header class="header">
           <div class="header__contenedor">
             <div class="logo__buscador">
-              <a class="logo" href="../docs/index.html">
-                <img src="../assets/images/logos/Logo.png" alt="" />
+              <a class="logo" href="index.html">
+                <img src="assets/images/logos/Logo.png" alt="" />
               </a>
               <div class="buscador">
                 <input type="text" placeholder="¿Qué deseas buscar?" data-buscador/>
-                <button type="submit" data-filtrarBtn><img src="../assets/iconos/lupa.svg" alt="" /></button>
+                <button type="submit" data-filtrarBtn><img src="assets/iconos/lupa.svg" alt="" /></button>
               </div>
             </div>
   
@@ -35,7 +35,7 @@
       <!--Sección de registro de producto-->
       <section class="Seccion__RegistroProductos">
             <form action="" data-form>
-                <h2>Actualizar producto</h2>
+                <h2>Agregar nuevo producto</h2>
                 <input type="file" placeholder="Url de Imagen" data-imagen>
                 <select name="" id="" data-categoria>
                   <option selected="true" disabled="disabled">Seleccione la categoría</option>
@@ -46,7 +46,7 @@
                 <input type="text" placeholder="Nombre del Producto" data-nombre>
                 <input type="text" placeholder="Precio del Producto" data-precio>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del Producto" data-descripcion></textarea>
-                <button type="submit">Actualizar Producto</button>
+                <button type="submit">Agregar Producto</button>
             </form>
       </section>
 
@@ -77,12 +77,36 @@
               <form action="">
                 <p>Hable con nosotros</p>
 
-                <input type="text" placeholder="Nombre" />
+                <div class="formulario__form__contenedor">
+                  <input
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                    data-tipo="nombre"
+                  />
 
-                <textarea name="" id="" cols="30" rows="5"></textarea>
+                  <span class="input-message-error"
+                    >Este campo no es valido</span
+                  >
+                </div>
+                <div class="formulario__form__contenedor">
+                  <textarea
+                    type="text"
+                    cols="30"
+                    rows="10"
+                    required
+                    minlength="15"
+                    data-tipo="mensaje"
+                  >
+                  </textarea>
+
+                  <span class="input-message-error"
+                  >Este campo no es valido</span
+                >
+                </div>
 
                 <div class="formulario__boton">
-                  <button>Enviar Mensaje</button>
+                  <button type="submit">Enviar Mensaje</button>
                 </div>
               </form>
             </div>
@@ -93,8 +117,8 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="../controllers/filtrarProductos.controller.js"></script>
-    <script type="module" src="../controllers/actualizarProducto.controller.js"></script>
-    <script type="module" src="../controllers/getCuenta.controller.js"></script>
+    <script type="module" src="controllers/filtrarProductos.controller.js"></script>
+    <script type="module" src="controllers/registrarProducto.controller.js"></script>
+    <script type="module" src="controllers/getCuenta.controller.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 import { userServices } from "../service/user-service.js";
 
+
+
+
+
 const getNavAdmin = () => {
   const linea = document.createElement("div");
   const nav = `
     <a href="./MenuAdmin.html">Menu Administrador</a>
-    <button>Logout</button>
+    <button type="button" data-logout>Logout</button>
     `;
 
   linea.innerHTML = nav;
@@ -37,5 +41,11 @@ const getCuenta = async () => {
     nav.appendChild(navAdmin);
   }
 };
+
+const btnLogout=document.querySelector('[data-logout]');
+
+if(btnLogout){
+  console.log('hola')
+}
 
 getCuenta();
