@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Pagina Registro Productos/PaginaRegistroProductos.css">
+    <link rel="stylesheet" href="../css/Pagina Principal/Header.css">
+    <link rel="stylesheet" href="../css/Pagina Registro Productos/RegistroProductos.css">
+    <link rel="stylesheet" href="../css/Pagina Registro Productos/Footer.css">
+    <link rel="stylesheet" href="../assets/sweet/sweetalert2.css">
+</head>
+<body>
+    <div class="RegistroProductos__AluraGeek">
+        <!--Sección del header de AluraGeek-->
+        <header class="header">
+          <div class="header__contenedor">
+            <div class="logo__buscador">
+              <a class="logo" href="/index.html">
+                <img src="../assets/images/logos/Logo.png" alt="" />
+              </a>
+              <div class="buscador">
+                <input type="text" placeholder="¿Qué deseas buscar?" data-buscador/>
+                <button type="submit" data-filtrarBtn><img src="../assets/iconos/lupa.svg" alt="" /></button>
+              </div>
+            </div>
+  
+            <nav data-nav></nav>
+          </div>
+        </header>
+
+      <!--Sección de registro de producto-->
+      <section class="Seccion__RegistroProductos">
+            <form action="" data-form>
+                <h2>Actualizar producto</h2>
+                <input type="file" placeholder="Url de Imagen" data-imagen>
+                <select name="" id="" data-categoria>
+                  <option selected="true" disabled="disabled">Seleccione la categoría</option>
+                  <option value="Star Wars">Star Wars</option>
+                  <option value="Consolas">Consolas</option>
+                  <option value="Diversos">Diversos</option>
+                </select>
+                <input type="text" placeholder="Nombre del Producto" data-nombre>
+                <input type="text" placeholder="Precio del Producto" data-precio>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del Producto" data-descripcion></textarea>
+                <button type="submit">Actualizar Producto</button>
+            </form>
+      </section>
+
+
+      <!--Sección del footer de AluraGeek-->
+      <footer class="PiedePagina">
+        <div class="PiedePagina__primeraSeccion">
+          <div class="PiedePagina__primeraSeccion__contenedor">
+            <div class="PiedePagina__logo__navegador">
+              <div class="PiedePagina__logo">
+                <img src="../assets/images/logos/Logo.png" alt="" />
+              </div>
+              <div class="PiedePagina__navegacion">
+                <nav>
+                  <ul>
+                    <li>Quienes somos</li>
+                    <li>Política de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras Tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Anúncie aquí</li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="PiedePagina__formulario">
+              <form action="">
+                <p>Hable con nosotros</p>
+
+                <input type="text" placeholder="Nombre" />
+
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+
+                <div class="formulario__boton">
+                  <button>Enviar Mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="PiedePagina__segundaSeccion">
+          <p>Desarrollado por Jorge Federico Miranda Morones / 2023</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../assets/sweet/sweetalert2.min.js"></script>
+    <script type="module" src="../controllers/productos/filtrarProductos.controller.js"></script>
+    <script type="module" src="../controllers/productos/actualizarProducto.controller.js"></script>
+    <script type="module" src="../controllers/usuarios/getCuenta.controller.js"></script>
+</body>
+</html>
