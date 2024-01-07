@@ -1,5 +1,5 @@
-import { listarProducto } from "../../helpers/listarProducto.js";
+import { listarProductosPorCategoria } from "../../helpers/listarProductosPorCategoria.js";
 
 
-listarProducto('Diversos','Diversos')
+listarProductosPorCategoria('Diversos','Diversos')
 

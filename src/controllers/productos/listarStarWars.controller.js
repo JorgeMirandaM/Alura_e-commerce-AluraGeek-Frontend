@@ -1,4 +1,4 @@
-import { listarProducto } from "../../helpers/listarProducto.js";
+import { listarProductosPorCategoria } from "../../helpers/listarProductosPorCategoria";
 
 
-listarProducto('Star Wars','StarWars')
+listarProductosPorCategoria('Star Wars','StarWars')

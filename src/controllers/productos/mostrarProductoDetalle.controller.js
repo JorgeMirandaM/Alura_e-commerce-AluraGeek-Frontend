@@ -1,3 +1,4 @@
+import { crearPlantillaProducto } from "../../helpers/crearPlantillaProducto.js";
 import { productServices } from "../../service/product-service.js";
 
 const productoDetalle = document.querySelector("[data-productoDetalle]");
@@ -22,24 +23,7 @@ const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => 
   return linea;
 };
 
-const listarProductosSimilares = (_id, imagen, categoria, nombre, precio, descripcion) => {
-  const linea = document.createElement("div");
-  const producto = `<div class="producto">
-  <div class="producto__imagen">
-    <img
-      src=${imagen}
-      alt=""
-    />
-  </div>
-  <div class="producto__informacion">
-    <p>${nombre}</p>
-    <span>${precio}</span>
-    <a href="/src/pages/Producto.html?id=${_id}">Ver producto</a>
-  </div>
-</div>`;
-  linea.innerHTML = producto;
-  return linea;
-};
+
 
 const obtenerInformacion = async () => {
   const url = new URL(window.location);
@@ -62,7 +46,7 @@ const obtenerInformacion = async () => {
 
   productos.forEach(
     ({ _id, imagen, categoria, nombre, precio, descripcion, autor }) => {
-      const nuevoProducto = listarProductosSimilares(
+      const nuevoProducto = crearPlantillaProducto(
         _id,
         imagen,
         categoria,
