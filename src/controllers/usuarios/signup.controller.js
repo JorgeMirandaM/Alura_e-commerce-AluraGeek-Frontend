@@ -12,16 +12,28 @@ formulario.addEventListener('submit', (e) => {
 
 
     const response = userServices.signup(nombre, email, password);
-    if (response.ok===false || response===false) {
+
+    if (response.ok === false || response === false) {
         Swal.fire({
             title: 'Error!',
             text: 'Error en la petición',
             icon: 'error',
             timer: 1500
-          })
+        })
+
+        document.querySelector('[data-form]').reset();
         return;
     }
+
     document.querySelector('[data-form]').reset();
 
+    Swal.fire({
+        icon: "success",
+        title: "Registro con exito",
+        timer: 1500
+    })
 
+    setTimeout(() => {
+        window.location.href = "MenuAdmin.html";
+    }, 2000);
 })
