@@ -50,6 +50,16 @@ const detalleProducto= async (id)=>{
     }
 }
 
+const obtenerProductoPorCategoria= async (categoria)=>{
+    try {
+        const response= await fetch(`http://localhost:4000/api/productos/getProductsByCategory/${categoria}`);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+        return false;
+    }
+}
+
 const actualizarProducto= async (id,data)=>{
     
     try {
@@ -74,5 +84,6 @@ export const productServices={
     crearProducto,
     eliminarProducto,
     detalleProducto,
+    obtenerProductoPorCategoria,
     actualizarProducto
 }
