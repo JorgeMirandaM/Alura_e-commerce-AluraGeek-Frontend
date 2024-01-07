@@ -9,7 +9,12 @@ formulario.addEventListener('submit', async (e) => {
 
     const response = await userServices.signin(email, password);
     if (response.ok===false || response===false) {
-        alert(response.msg)
+        Swal.fire({
+            title: 'Error!',
+            text: 'Error en la petición',
+            icon: 'error',
+            timer: 1500
+          })
         return;
     }
 

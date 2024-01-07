@@ -35,6 +35,9 @@ const obtenerInformacion = async () => {
 }
 
 
+
+
+
 formulario.addEventListener("submit",async (e) => {
   e.preventDefault();
 

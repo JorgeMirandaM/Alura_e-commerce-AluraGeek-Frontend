@@ -12,7 +12,15 @@ formulario.addEventListener('submit', (e) => {
 
 
     const response = userServices.signup(nombre, email, password);
-    console.log(response)
+    if (response.ok===false || response===false) {
+        Swal.fire({
+            title: 'Error!',
+            text: 'Error en la petición',
+            icon: 'error',
+            timer: 1500
+          })
+        return;
+    }
     document.querySelector('[data-form]').reset();
 
 

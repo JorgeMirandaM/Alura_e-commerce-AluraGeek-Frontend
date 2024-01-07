@@ -35,11 +35,20 @@ const obtenerInformacion = async () => {
 
   productoDetalle.appendChild(productoDetallado);
 
-  const {products} = await productServices.listarProductos();
+  const response = await productServices.listarProductos();
 
-  console.log(products)
+  if (response.ok === false || response===false) {
+    Swal.fire({
+      title: 'Error!',
+      text: 'Error en la petición',
+      icon: 'error',
+      timer: 1500
+    })
+    return
+  }
 
-  const productos = products.filter(
+
+  const productos = response.products.filter(
     (student) =>
       student.categoria === productDoc.categoria
   );

@@ -10,9 +10,20 @@ const seccionProductos = document.querySelector("[data-seccionProductos]");
 
 const filtrarProductos = async () => {
  
-    const data = await productServices.listarProductos();
+    const response = await productServices.listarProductos();
 
-    const productos = data.products.filter(
+    if (response.ok === false || response===false) {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Error en la petición',
+        icon: 'error',
+        timer: 1500
+      })
+      return
+    }
+    
+
+    const productos = response.products.filter(
       (student) =>
         student.categoria === palabraClave.value ||
         student.nombre === palabraClave.value ||

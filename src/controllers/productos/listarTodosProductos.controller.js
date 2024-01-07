@@ -8,7 +8,17 @@ const botonVerTodo = document.querySelector('[data-btnVerTodo]')
 
 const verTodoProductos = async () => {
 
-  const {products} = await productServices.listarProductos();
+  const response = await productServices.listarProductos();
+
+  if (response.ok === false || response===false) {
+    Swal.fire({
+      title: 'Error!',
+      text: 'Error en la petición',
+      icon: 'error',
+      timer: 1500
+    })
+    return
+  }
 
 
   const linea = document.createElement("div");
@@ -24,7 +34,7 @@ const verTodoProductos = async () => {
 
   const seccionPalabraClave = document.querySelector("[data-palabraClave]");
 
-  products.forEach(
+  response.products.forEach(
     ({ _id, imagen, categoria, nombre, precio, descripcion, autor }) => {
       const nuevoProducto = crearPlantillaProducto(
         _id,

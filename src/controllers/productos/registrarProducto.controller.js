@@ -20,7 +20,6 @@ formulario.addEventListener('submit', async (e) => {
   data.set('descripcion', descripcion);
 
   const response = await productServices.crearProducto(data);
-  console.log(response)
 
   if (response.ok==false || response===false) {
     Swal.fire({

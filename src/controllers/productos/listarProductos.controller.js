@@ -8,8 +8,18 @@ const Diversos = document.querySelector("[data-Diversos]");
 
 const listarProductos = async () => {
   
-    const data = await productServices.listarProductos();
-    data.products.forEach(({ _id, imagen, categoria, nombre, precio, descripcion,autor }) => {
+    const response = await productServices.listarProductos();
+
+    if (response.ok === false || response===false) {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Error en la petición',
+        icon: 'error',
+        timer: 1500
+      })
+      return
+    }
+    response.products.forEach(({ _id, imagen, categoria, nombre, precio, descripcion,autor }) => {
       const nuevoProducto = crearPlantillaProducto(
         _id,
         imagen,
