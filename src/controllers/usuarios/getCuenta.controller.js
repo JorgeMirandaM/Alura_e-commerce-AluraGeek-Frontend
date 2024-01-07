@@ -34,7 +34,7 @@ const getCuenta = async () => {
 
       const response = await userServices.logout();
 
-      if (!response.ok===false | response===false) {
+      if (response.ok===false | response===false) {
         Swal.fire({
           title: 'Error!',
           text: 'Error en la petición',
