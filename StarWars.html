@@ -4,28 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/Pagina Productos/PaginaProductos.css" />
-    <link rel="stylesheet" href="../css/Pagina Principal/Header.css">
-    <link rel="stylesheet" href="../css/Pagina Productos/Productos.css">
-    <link rel="stylesheet" href="../css/Pagina Principal/Footer.css" />
-    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="../assets/sweet/sweetalert2.css">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/Pagina Principal/PaginaPrincipal.css" />
+    <link rel="stylesheet" href="./src/css/Pagina Principal/Header.css" />
+    <link rel="stylesheet" href="./src/css/Pagina Principal/Banner.css" />
+    <link rel="stylesheet" href="./src/css/Pagina Principal/Productos.css" />
+    <link rel="stylesheet" href="./src/css/Pagina Principal/Footer.css" />
+    <link rel="stylesheet" href="./src/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./src/assets/sweet/sweetalert2.css">
   </head>
   <body>
-    <div class="">
+    <div class="PaginaPrincipal__AluraGeek">
       <!--Sección del header de AluraGeek-->
       <header class="header">
         <div class="header__contenedor">
           <div class="logo__buscador">
-            <a class="logo" href="/index.html">
-              <img src="../assets/images/logos/Logo.png" alt="" />
+            <a class="logo" href="index.html">
+              <img src="./src/assets/images/logos/Logo.png" alt="" />
             </a>
             <div class="buscador">
               <input type="text" placeholder="¿Qué deseas buscar?" data-buscador/>
-              <button type="submit" data-filtrarBtn><img src="../assets/iconos/lupa.svg" alt="" /></button>
+              <button type="submit" data-filtrarBtn><img src="./src/assets/iconos/lupa.svg" alt="" /></button>
             </div>
           </div>
 
@@ -38,19 +39,17 @@
       <!--Sección de galería de productos-->
       <section class="seccion__productos">
         <div class="seccion__productos__contenedor">
-          <div class="titulo__agregarProducto">
-            <h2>Todos los productos</h2>
-            
-            <div>
-              <a href="RegistroUsuario.html">Agregar Usuario</a>
-              <a href="RegistroProducto.html">Agregar Producto</a>
+          
+          <!--Seccion Consolas-->
+          <div class="producto__renglon">
+            <div class="titulo__verTodo">
+              <h2>Star Wars</h2>
             </div>
-            
+            <div class="productos" data-StarWars>
+              
+            </div>
           </div>
-          <div class="productos" data-productos>
-            
-            
-          </div>
+          
         </div>
       </section>
 
@@ -60,7 +59,7 @@
           <div class="PiedePagina__primeraSeccion__contenedor">
             <div class="PiedePagina__logo__navegador">
               <div class="PiedePagina__logo">
-                <img src="../assets/images/logos/Logo.png" alt="" />
+                <img src="./src/assets/images/logos/Logo.png" alt="" />
               </div>
               <div class="PiedePagina__navegacion">
                 <nav>
@@ -120,9 +119,10 @@
         </div>
       </footer>
     </div>
-    <script src="../assets/sweet/sweetalert2.min.js"></script>
-    <script type="module" src="../controllers/productos/filtrarProductos.controller.js"></script>
-    <script type="module" src="../controllers/usuarios/menuAdmin.controller.js"></script>
-    <script type="module" src="../controllers/usuarios/getCuenta.controller.js"></script>
+    <script src="./src/assets/sweet/sweetalert2.min.js"></script>
+    <script type="module" src="./src/controllers/productos/filtrarProductos.controller.js"></script>
+    <script type="module" src="./src/controllers/productos/listarStarWars.controller.js"></script>
+    <script type="module" src="./src/controllers/productos/listarTodosProductos.controller.js"></script>
+    <script type="module" src="./src/controllers/usuarios/getCuenta.controller.js"></script>
   </body>
 </html>

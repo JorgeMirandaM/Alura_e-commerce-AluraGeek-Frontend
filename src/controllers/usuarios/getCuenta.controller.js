@@ -3,7 +3,7 @@ import { userServices } from "../../service/user-service.js";
 const getNavAdmin = () => {
   const linea = document.createElement("div");
   const nav = `
-    <a href="/src/pages/MenuAdmin.html">Menu Administrador</a>
+    <a href="MenuAdmin.html">Menu Administrador</a>
     <button type="button" data-logout>Logout</button>
     `;
   linea.innerHTML = nav;
@@ -13,7 +13,7 @@ const getNavAdmin = () => {
 const getNav = () => {
   const linea = document.createElement("div");
   const nav = `
-    <a href="/src/pages/Login.html">Login</a>
+    <a href="Login.html">Login</a>
     `;
   linea.innerHTML = nav;
   return linea;
@@ -44,7 +44,7 @@ const getCuenta = async () => {
         return
       }
 
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     })
 
   } else {

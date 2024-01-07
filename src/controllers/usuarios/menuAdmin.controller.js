@@ -11,8 +11,8 @@ const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => 
 
     <div>
       <button type="button"
-      id=${_id}><img src="../assets/iconos/basura.svg" alt="" /></button>
-      <a href="ActualizarProducto.html?id=${_id}"><img src="../assets/iconos/lapiz.svg" alt="" /></a>
+      id=${_id}><img src="./src/assets/iconos/basura.svg" alt="" /></button>
+      <a href="ActualizarProducto.html?id=${_id}"><img src="./src/assets/iconos/lapiz.svg" alt="" /></a>
     </div>
   </div>
   <div class="producto__informacion">
@@ -36,7 +36,7 @@ const listarProducto = (_id, imagen, categoria, nombre, precio, descripcion) => 
         timer: 1500
       })
       setTimeout(() => {
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
       }, 2000);
       return
     }

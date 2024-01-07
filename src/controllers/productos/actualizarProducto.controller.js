@@ -64,7 +64,7 @@ formulario.addEventListener("submit",async (e) => {
       })
       document.querySelector('[data-form]').reset();
       setTimeout(() => {
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
       }, 2000);
       return
     }
